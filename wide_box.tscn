@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ue8h4dmfs31g"]
+
+[ext_resource type="Texture2D" uid="uid://b6a04w1golu7i" path="res://sea.png" id="1_ykpix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_321rv"]
+size = Vector2(176, 48)
+
+[node name="wide_box" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3.66667, 1)
+texture = ExtResource("1_ykpix")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_321rv")
